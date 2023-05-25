@@ -187,10 +187,10 @@ const eliminarTodoElCarrito = () => {
 
 const total = document.getElementById("total");
 
-const calcularTotal = () => {
-    let totalCompra = 0;
-    carrito.forEach(producto => {
-        totalCompra += producto.precio * producto.cantidad;
+    const calcularTotal = () => {
+        let totalCompra = 0;
+            carrito.forEach(producto => {
+              totalCompra += producto.precio * producto.cantidad;
     })
     total.innerHTML = `Total: $${totalCompra}`;
 }
